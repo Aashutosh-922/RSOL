@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Candidate Search</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Candidate Search</h1>
+  </header>
+
+  <section id="search-form">
+    <label for="location">Location:</label>
+    <input type="text" id="location" required>
+
+    <label for="job-role">Job Role:</label>
+    <input type="text" id="job-role" required>
+
+    <button type="button" onclick="searchCandidates()">Search</button>
+  </section>
+
+  <section id="candidate-list">
+    <h2>Candidates:</h2>
+    <ul id="candidates">
+      <!-- Fetched candidates will be listed here -->
+    </ul>
+  </section>
+
+  <section id="process-buttons">
+    <button onclick="evaluateCandidates()">Evaluate Candidates</button>
+    <button onclick="rankCandidates()">Rank Candidates</button>
+  </section>
+</body>
+</html>
+
+
